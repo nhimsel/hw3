@@ -36,5 +36,27 @@ int main()
         cout << "x is less than y" << endl;
     }
 
+    //Part 3
+    int i = 0;
+
+    while (i<5)
+    {
+        cout << i << endl;
+        i++;
+    }
+
+    int e = 0;
+    do 
+    {
+        cout << e << endl;
+        e++;
+    }
+    while (e<5);
+
+    for(int o = 0; o<5; o++)
+    {
+        cout << o << endl;
+    }
+
     return 0;
 }
