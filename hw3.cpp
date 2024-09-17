@@ -75,13 +75,12 @@ int main()
         else if (rep<2) 
         {
             cout << "Incorrect password. Try again" << endl;
-            rep++;
         }
         else 
         {
             cout << "Too many failed attempts. Access denied." << endl;
-            rep++;
         }
+        rep++;
     }
 
     return 0;
