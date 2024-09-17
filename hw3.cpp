@@ -58,5 +58,31 @@ int main()
         cout << o << endl;
     }
 
+    //Part 4
+    bool isLoggedIn = false;
+    string password = "Password!";
+    int rep = 0;
+
+    while (!isLoggedIn && rep<3)
+    {
+        string temp;
+        cout << "Please enter your password: " << endl;
+        cin >> temp;
+        if (temp == password)
+        {
+            isLoggedIn = true;
+        }
+        else if (rep<2) 
+        {
+            cout << "Incorrect password. Try again" << endl;
+            rep++;
+        }
+        else 
+        {
+            cout << "Too many failed attempts. Access denied." << endl;
+            rep++;
+        }
+    }
+
     return 0;
 }
